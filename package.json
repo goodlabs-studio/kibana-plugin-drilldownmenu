@@ -1,0 +1,8 @@
+{
+  "name": "kibana-plugin-drilldownmenu",
+  "version": "1.0.0",
+  "description": "A field-formatter plugin allowing fields to be drilled down into multiple visualizations/dashboards",
+  "kibana": {
+    "version": "7.6.2"
+  }
+}

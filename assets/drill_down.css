@@ -1,0 +1,43 @@
+.hover-element {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.hover-element .tooltip-container {
+  width: 220px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 100%;
+  display: none;
+}
+
+.hover-element .tooltip-container .tooltip-link {
+  text-decoration: none;
+  color: white;
+}
+
+.tooltip-image {
+  height:1em;
+}
+
+.hover-element:hover .tooltip-container {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.url-button-wrapper {
+  margin-bottom: 10px;
+}
+
+.url-input-wrapper {
+  margin: 10px 0px;
+}
