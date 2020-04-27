@@ -5,8 +5,8 @@
 
 - Clone this repository
 - Rename cloned folder to `kibana-plugin-drilldownmenu`
-- Create a folder named `kibana`
-- Copy repository into newly created folder `kibana`
+- Create another folder named `kibana`
+- Copy `kibana-plugin-drilldownmenu` folder into newly created folder `kibana`
 ```.
 ├── kibana
 │   ├── kibana-plugin-drilldownmenu
@@ -16,7 +16,7 @@
 │   │   ├── .
 ```
 - Compress `kibana` into `kibana.zip`
-- Install plugin into kibana
+- Install plugin into kibana with:
 ```
 ./kibana-plugin install file://[PATH-TO-ZIP]
 ```
