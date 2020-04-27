@@ -1,6 +1,10 @@
 import $ from 'jquery';
 
 $(document).ready(function(e){ 
+
+	$(window).scroll(function(){
+		$(".modal").css( "display", "none" );
+	})
   
 	$(document).on("click", "div.tooltip-container", function(e){
 		//Make URL's visible
