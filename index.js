@@ -7,7 +7,8 @@ module.exports = function (kibana) {
       visTypes: [
         'plugins/kibana-plugin-drilldownmenu/field_format/drill_down',
         'plugins/kibana-plugin-drilldownmenu/field_format_editor/drill_down',
-      ]
+      ],
+      hacks: ['plugins/kibana-plugin-drilldownmenu/hack'],
     },
   });
 };
