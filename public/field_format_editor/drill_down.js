@@ -11,10 +11,9 @@ import {
 } from '@elastic/eui';
 import { DefaultFormatEditor } from '../../../../src/legacy/ui/public/field_editor/components/field_format_editor/editors/default';
 import { LabelTemplateFlyout } from '../../../../src/legacy/ui/public/field_editor/components/field_format_editor/editors/url/label_template_flyout';
-import { UrlTemplateFlyout } from '../../../../src/legacy/ui/public/field_editor/components/field_format_editor/editors/url/url_template_flyout';
+import { UrlTemplateFlyout } from './url_template_flyout';
 import { RegistryFieldFormatEditorsProvider } from 'ui/registry/field_format_editors';
 import { FormattedMessage } from '@kbn/i18n/react';
-import '../../assets/drill_down.css';
 
 export class DrillDownFormatEditor extends DefaultFormatEditor {
 	static formatId = "drilldown";

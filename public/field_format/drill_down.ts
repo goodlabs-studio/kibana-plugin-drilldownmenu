@@ -7,7 +7,6 @@ import { escape, memoize } from 'lodash';
 import barGraphIcon from '../../assets/bar_graph.png';
 import dashboardIcon from '../../assets/dashboard.png';
 import linkIcon from '../../assets/link.png';
-import moreIcon from '../../assets/more.png';
 import '../../assets/drill_down.css';
 
 const templateMatchRE = /{{([\s\S]+?)}}/g;
@@ -141,30 +140,17 @@ export class DrillFormat extends FieldFormat {
 				const linkTarget = '_blank';
 
 				linkElements = linkElements + `<a href="${prefix}${url}" target="${linkTarget}" class="tooltip-link" rel="noopener noreferrer">
-													<img class="tooltip-icon" src="${icon}"/>
+													<img class="tooltip-image" src="${icon}"/>
 													${linkLabel}
 												</a>`;
 			}
 		})
 
-		// return `<div class="hover-element">${rawValue}
-		// 			<div class="tooltip-container">
-		// 				${linkElements}
-		// 			</div>
-		// 		</div>`;
-
 		return `<div class="hover-element">${rawValue}
-   					<div class="tooltip-container"><img class="tooltip-icon" src="${moreIcon}"/> 
-   						<span>Details</span>
+					<div class="tooltip-container">
+						${linkElements}
 					</div>
-  					<div class="modal">
-	    				<div class="modal-content">
-	      					<div class="url-list">
-	        					${linkElements}
-	      					</div>
-	    				</div>
-  					</div>
-				</div>`
+				</div>`;
 	};
 
 }
