@@ -10,32 +10,39 @@
 }
 
 .tooltip-container {
-  width: 60px;
   background-color: black;
   color: #fff;
   text-align: center;
   border-radius: 3px;
-  padding: 5px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   bottom: 130%;
-  left: 50%;
   margin-left: -15px;
   display: none;
   font-family: 'Inter', sans-serif;
-  font-weight: bold;
 }
 
-.tooltip-container::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent transparent;
+/* Tooltip for when our field-type is in a document that is in the expanded document view */
+.doc-expand-tooltip-container {
+  width: 70px;
+  padding: 10px;
+  left: 60%;
 }
+
+/* Tooltip for when our field-type is in a document that is in the regular table view(not expanded) */
+.doc-regular-tooltip-container {
+  width: 60px;
+  padding: 5px 0;
+  left: 50%;
+}
+
+/* Tooltip for when our field-type is in a table visualization */
+.table-regular-tooltip-container {
+  width: 60px;
+  padding: 5px 0;
+  left: 50%;
+}
+
 
 .details:hover .tooltip-container {
   display: block;
@@ -89,4 +96,20 @@
 
 .url-input-wrapper {
   margin: 10px 0px;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
