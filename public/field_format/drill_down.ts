@@ -140,11 +140,11 @@ export class DrillFormat extends FieldFormat {
 
 				const linkTarget = '_blank';
 
-				linkElements = linkElements + `<a href="${prefix}${url}" target="${linkTarget}" class="tooltip-link" rel="noopener noreferrer"><img class="tooltip-icon" src="${icon}"/>${linkLabel.trim()}</a>`;
+				linkElements = linkElements + `<a href="${prefix}${url}" target="${linkTarget}" class="tooltip-link" rel="noopener noreferrer"><img class="tooltip-icon" src="${icon}"/>${linkLabel}</a>`;
 			}
 		})
 
-		return `<div class="field-element">${rawValue.trim()}<div class="modal"><div class="modal-content"><div class="url-list">${linkElements}</div></div></div></div>`
+		return `<div class="field-element">${rawValue}<div class="modal"><div class="modal-content"><div class="url-list">${linkElements}</div></div></div></div>`
 	};
 
 }
