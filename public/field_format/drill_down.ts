@@ -7,8 +7,8 @@ import { escape, memoize } from 'lodash';
 import barGraphIcon from '../../assets/bar_graph.png';
 import dashboardIcon from '../../assets/dashboard.png';
 import linkIcon from '../../assets/link.png';
-import moreIcon from '../../assets/more.png';
 import '../../assets/drill_down.css';
+
 
 const templateMatchRE = /{{([\s\S]+?)}}/g;
 const whitelistUrlSchemes = ['http://', 'https://'];
