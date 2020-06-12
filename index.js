@@ -9,8 +9,8 @@ module.exports = function (kibana) {
         'plugins/kibana-plugin-drilldownmenu/field_format_editor/drill_down',
       ],
       hacks: [
-        'plugins/kibana-plugin-drilldownmenu/darkMode',
-        'plugins/kibana-plugin-drilldownmenu/hack',
+        'plugins/kibana-plugin-drilldownmenu/hacks/darkMode',
+        'plugins/kibana-plugin-drilldownmenu/hacks/hack',
       ],
     },
   });

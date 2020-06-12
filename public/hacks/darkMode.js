@@ -1,3 +1,5 @@
+import chrome from 'ui/chrome';
+
 //CSS variables 
 const tooltip_background = '--tooltip-background';
 const tooltip_color = '--tooltip-color';
@@ -8,7 +10,7 @@ const tooltip_link_hover_color = '--tooltip-link-hover-color';
 
 const getDarkMode = async () => {
     
-    const response = await fetch('http://localhost:5601/api/kibana/settings', {
+    const response = await fetch(chrome.addBasePath('/api/kibana/settings'), {
                         method: 'GET'
                     })
     
