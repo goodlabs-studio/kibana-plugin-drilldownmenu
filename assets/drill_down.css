@@ -4,7 +4,7 @@
   --modal-background: black;
   --modal-color: #fff;
   --tooltip-link-color: white;
-  --tooltip-link-hover-color: #00bfff;
+  --euiColorPrimary: #01FFFF;
 }
 
 .field-element {
@@ -63,7 +63,7 @@
 }
 
 .tooltip-link:hover {
-  color: var(--tooltip-link-hover-color);
+  color: var(--euiColorPrimary);
 }
 
 .tooltip-icon {
@@ -114,10 +114,62 @@
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #4691f6;
+  fill: var(--euiColorPrimary);
 }
 
 .svg-icon circle {
-  stroke: #4691f6;
+  stroke: var(--euiColorPrimary);
   stroke-width: 1;
 }
+
+
+/* Theme stuff */
+
+/* .app-wrapper-panel {
+  background-color: green;
+}
+.euiPage {
+  background-color: green;
+} 
+
+.euiPanel{
+  background-color: green;
+} 
+
+.euiCard{
+  background-color: green;
+} 
+.euiFlexItem{
+  background-color: green;
+} 
+.euiHeader{
+  background-color: green;
+} 
+.euiToolTipAnchor{
+  background-color: green;
+} 
+
+.dscWrapper__content{
+  background-color: green;
+} 
+
+.euiFormControlLayout--group{
+  background-color: green;
+} 
+
+.euiFieldSearch--compressed{
+  background-color: green;
+} 
+.euiFieldSearch{
+  background-color: green;
+} 
+
+.euiDatePickerRange{
+  background-color: green;
+} 
+.euiTable{
+  background-color: green;
+} 
+.euiTableRow{
+  background-color: green;
+}  */
